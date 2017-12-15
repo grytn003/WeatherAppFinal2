@@ -7,8 +7,7 @@ namespace Week9PrismExampleApp
     {
         public static async Task<Weather> GetWeather(string zipCode)
         {
-            //Sign up for a free API key at http://openweathermap.org/appid
-            string key = "0d3a5da3f6788bc487d9bbf040a3024e";
+            string key = "";
             string queryString = "http://api.openweathermap.org/data/2.5/weather?zip="
                 + zipCode + ",&appid=" + key;
 
