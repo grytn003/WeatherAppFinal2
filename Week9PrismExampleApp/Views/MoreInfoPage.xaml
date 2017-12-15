@@ -14,24 +14,24 @@
             HorizontalOptions="CenterAndExpand"/>
         <Label
             Style="{StaticResource title_style}"
-            Text="{Binding Weather.Description}" 
+            Text="{Binding WeatherItem.Weather.Description}" 
             FontSize="16"
             HorizontalOptions="CenterAndExpand"/>
         <Label
             Style="{StaticResource description_style}"
             x:Name="TemperatureLabel"
             Text="{Binding WeatherItem.Main.Temp, StringFormat='Temperature: {0}°'}"
-            VerticalOptions="Start"/>
+            HorizontalOptions="Start"/>
         <Label
             Style="{StaticResource description_style}"
             x:Name="CloudLabel"
             Text="{Binding WeatherItem.Clouds.All, StringFormat='Clouds: {0}%'}"
-            VerticalOptions="Start"/>
+            HorizontalOptions="Start"/>
         <Label
             Style="{StaticResource description_style}"
             x:Name="WindLabel"
             Text="{Binding WeatherItem.Wind.Speed, StringFormat='Wind speed: {0} mph'}"
-            VerticalOptions="Start"/>
+            HorizontalOptions="Start"/>
         <Label
             Style="{StaticResource description_style}"
             VerticalOptions="Center"

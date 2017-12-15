@@ -26,6 +26,7 @@ namespace Week9PrismExampleApp
             Container.RegisterTypeForNavigation<MoreInfoPage>();
             Container.RegisterTypeForNavigation<CheckCitiesPage>();
             Container.RegisterTypeForNavigation<MapsPage>();
+            Container.RegisterTypeForNavigation<CheckZipCodePage>();
         }
     }
 }

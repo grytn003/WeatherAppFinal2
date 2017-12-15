@@ -7,6 +7,7 @@ using System.Linq;
 using System.Collections.ObjectModel;
 using System.Net.Http;
 using static Week9PrismExampleApp.Models.WeatherItemModel;
+using Plugin.Geolocator;
 
 namespace Week9PrismExampleApp.ViewModels
 {
@@ -16,6 +17,7 @@ namespace Week9PrismExampleApp.ViewModels
 
         public DelegateCommand NavToCheckCitiesPageCommand { get; set; }
         public DelegateCommand NavToMapsPageCommand { get; set; }
+        public DelegateCommand NavToCheckZipCodePageCommand { get; set; }
 
         private string _title;
         public string Title
@@ -30,6 +32,7 @@ namespace Week9PrismExampleApp.ViewModels
 
             NavToCheckCitiesPageCommand = new DelegateCommand(NavToCheckCitiesPage);
             NavToMapsPageCommand = new DelegateCommand(NavToMapsPage);
+            NavToCheckZipCodePageCommand = new DelegateCommand(NavToCheckZipCodePage);
 
             Title = "Weather Application with Prism";
         }
@@ -42,6 +45,11 @@ namespace Week9PrismExampleApp.ViewModels
         private async void NavToMapsPage()
         {
             await _navigationService.NavigateAsync("MapsPage");
+        }
+
+        private async void NavToCheckZipCodePage()
+        {
+            await _navigationService.NavigateAsync("CheckZipCodePage");
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

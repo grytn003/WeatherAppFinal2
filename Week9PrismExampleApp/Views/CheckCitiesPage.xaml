@@ -13,7 +13,6 @@
             Text="Enter cities you're interested in:"/>
         <StackLayout>
             <Entry
-                Placeholder="Type here"
                 TextColor="#FFFFFF"
                 Text="{Binding LocationEnteredByUser}"
                 WidthRequest="200" />

@@ -20,6 +20,9 @@
             <Button Style="{StaticResource button_style}"
                 Text="I want to check with a map"  
                 Command="{Binding NavToMapsPageCommand}" />
+            <Button Style="{StaticResource button_style}"
+                Text="I want to check weather by zip code"  
+                Command="{Binding NavToCheckZipCodePageCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

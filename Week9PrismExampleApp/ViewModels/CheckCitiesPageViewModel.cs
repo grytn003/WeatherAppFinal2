@@ -7,13 +7,14 @@ using System.Linq;
 using System.Collections.ObjectModel;
 using System.Net.Http;
 using static Week9PrismExampleApp.Models.WeatherItemModel;
+using Plugin.Geolocator;
 
 namespace Week9PrismExampleApp.ViewModels
 {
     public class CheckCitiesPageViewModel : BindableBase, INavigationAware
     {
         public DelegateCommand GetWeatherForLocationCommand { get; set; }
-		public DelegateCommand<WeatherItem> NavToMoreInfoPageCommand { get; set; }
+        public DelegateCommand<WeatherItem> NavToMoreInfoPageCommand { get; set; }
         public DelegateCommand<WeatherItem> DeleteItemCellCommand { get; set; }
 
         private string _buttonText;

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Plugin.Geolocator;
 
 namespace Week9PrismExampleApp.Views
 {
